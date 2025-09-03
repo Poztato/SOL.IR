@@ -30,7 +30,6 @@ if __name__ == "__main__":
     while True:
         
         t_c = read_temp_c()
-        t_f = t_c * 9/5 + 32
         print("Temp: {:.2f} °C".format(t_c))
         time.sleep(1)
 
