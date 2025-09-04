@@ -34,31 +34,9 @@ Universities waste energy when A/C runs in empty rooms, and students/staff lose 
 
 ## 🖼️ Architecture & Data Flow
 
-> Diagrams render on GitHub using Mermaid. If they don’t, see PNGs in `/docs/diagrams`.
 
 ### Block Diagram
 
-flowchart LR
-  subgraph Room["Classroom"]
-    subgraph AC["A/C Unit"]
-      T[Temp Sensor (Fin)]
-      W[Wind Turbine<br/>(harvest + airflow proxy)]
-      IR[IR Blaster]
-      EDGEPICO["Edge MCU (Pi Pico)"]
-      T --> EDGEPICO
-      W --> EDGEPICO
-      EDGEPICO --> IR
-    end
-    subgraph HUB["Central Hub"]
-      LP[(Low-power Hub:<br/>PIR + Sound AI + T/H)]:::lp
-      HP[(High-power Hub:<br/>Camera AI + T/H)]:::hp
-    end
-    EDGEPICO <---> HUB
-    HUB -->|IR Command| IR
-  end
+<img width="1837" height="1488" alt="block diagram v1" src="https://github.com/user-attachments/assets/3895763a-b1f1-48f6-8f01-1a8ed9657d9a" />
 
-  CAMPUS[(Timetable API<br/>/ Portal)] --> HUB
-  HUB -->|Alerts / Logs| CAMPUS
 
-  classDef lp fill:#e3fff2,stroke:#00a676;
-  classDef hp fill:#e9f0ff,stroke:#4e6cff;
