@@ -20,7 +20,7 @@ Universities waste energy when A/C runs in empty rooms, and students/staff lose 
   - **MCU:** Raspberry Pi Pico (current prototype). Bench mode via USB serial; field mode via Pico W / alternative wireless (future).
 
 - **Central Hub (per room)**
-  - **Low‑power variant (e.g., Pi Zero W)**: PIR motion + sound sensing (AI audio classifier), temp/humidity, solar trickle charging from indoor lighting. Sensor fusion → occupancy decision.
+  - **Low‑power variant (e.g., Pi Pico)**: PIR motion + sound sensing (AI audio classifier), temp/humidity, solar trickle charging from indoor lighting. Sensor fusion → occupancy decision.
   - **High‑power variant (e.g., Pi 5)**: Camera + on‑device **people detection** for occupancy counting; temp/humidity for redundancy and fault alerts.
   - **Timetable integration**: Pre‑cool rooms before class start; turn off during long gaps.
   - **Redundancy & fault detection**: Compares edge vs hub temperatures; flags anomalies to the institution portal/app.
