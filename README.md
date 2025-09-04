@@ -1,6 +1,6 @@
 # SOL.IR — Smart Occupancy‑Linked IR A/C Controller
 
-SOL.IR is a hardware-first IoT system that **automatically turns off classroom A/C** when a room is unoccupied—and smartly **pre‑cools** before scheduled classes. It combines **edge devices** mounted on A/C fins (detect actual A/C state and send telemetry) with a **central hub** (decides occupancy and issues IR on/off), supporting both **low-power (sensor fusion)** and **high-power (AI camera)** hub designs.
+SOL.IR is a hardware-first IoT system that **automatically turns off classroom A/C** when a room is unoccupied, then smartly **pre‑cools** before scheduled classes. It combines **edge devices** mounted on A/C fins (detect actual A/C state and send telemetry) with a **central hub** (decides occupancy and issues IR on/off), supporting both **low-power (sensor fusion)** and **high-power (AI camera)** hub designs.
 
 > **Hackathon Track:** Hardware • **Use Case:** Smart Campus Enhancements
 
@@ -11,7 +11,7 @@ Universities waste energy when A/C runs in empty rooms, and students/staff lose 
 
 ---
 
-## 🧩 System at a glance
+## 🧩 System overview
 
 - **Edge Device (per A/C unit)**
   - **Temp sensor** on the outlet fin to confirm A/C is actually cooling.
