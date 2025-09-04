@@ -37,6 +37,7 @@ Universities waste energy when A/C runs in empty rooms, and students/staff lose 
 
 ### Block Diagram
 
-<img width="1837" height="1488" alt="block diagram v1" src="https://github.com/user-attachments/assets/3895763a-b1f1-48f6-8f01-1a8ed9657d9a" />
+<img width="1837" height="1487" alt="Untitled Diagram drawio" src="https://github.com/user-attachments/assets/f07c879b-43da-4377-acc3-f36fa97cafbb" />
+
 
 
