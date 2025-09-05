@@ -39,6 +39,35 @@ Universities waste energy when A/C runs in empty rooms, and students/staff lose 
 
 <img width="1267" height="1348" alt="Block Diagram v1 0" src="https://github.com/user-attachments/assets/4b7024ea-5dda-4dd3-9388-242190d88f44" />
 
+---
+
+## 📁 Repository Structure
+
+```
+SOL.IR/
+├─ hardware/
+│  ├─ stl_files/              # 3D prints for all devices
+│  ├─ wiring/                 # Fritzing/PNG of wiring
+│  └─ photos/                 # Build photos
+├─ firmware/
+│  ├─ unit-test               # Individual/Compiled unit testing code (MicroPython)
+│  └─ pico/                   # Edge device firmware (Pico / MicroPython or C++)
+├─ devices/
+│  ├─ low_power_hub/          # Pi Zero W code (sensor fusion)
+│  ├─ edge_device/            # Edge Device code (IR blasting)
+│  └─ high_power_hub/         # Pi 5 code (AI people detection)
+├─ models/
+│  ├─ crowd_audio_detection/  # Audio-based crowd detection models
+│  └─ occupancy_detection/    # Vision-based occupancy detection models
+├─ docs/
+│  ├─ diagrams/               # Mermaid + exported PNGs
+│  └─ reports/                # Power budget, test notes
+├─ tools/                     # Calibration, IR learning scripts
+└─ README.md
+```
+
+---
+
 
 
 
