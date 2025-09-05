@@ -46,19 +46,19 @@ Universities waste energy when A/C runs in empty rooms, and students/staff lose 
 ```
 SOL.IR/
 ├─ hardware/
-│  ├─ stl_files/              # 3D prints for all devices
+│  ├─ stl-files/              # 3D prints for all devices
 │  ├─ wiring/                 # Fritzing/PNG of wiring
 │  └─ photos/                 # Build photos
 ├─ firmware/
 │  ├─ unit-test               # Individual/Compiled unit testing code (MicroPython)
 │  └─ pico/                   # Edge device firmware (Pico / MicroPython or C++)
-├─ devices/
-│  ├─ low_power_hub/          # Pi Zero W code (sensor fusion)
-│  ├─ edge_device/            # Edge Device code (IR blasting)
-│  └─ high_power_hub/         # Pi 5 code (AI people detection)
+├─ device-code/
+│  ├─ low-power-hub/          # Pi Zero W code (sensor fusion)
+│  ├─ edge-device/            # Edge Device code (IR blasting)
+│  └─ high-power-hub/         # Pi 5 code (AI people detection)
 ├─ models/
-│  ├─ crowd_audio_detection/  # Audio-based crowd detection models
-│  └─ occupancy_detection/    # Vision-based occupancy detection models
+│  ├─ crowd-audio-detection/  # Audio-based crowd detection models
+│  └─ occupancy-detection/    # Vision-based occupancy detection models
 ├─ docs/
 │  ├─ diagrams/               # Mermaid + exported PNGs
 │  └─ reports/                # Power budget, test notes
