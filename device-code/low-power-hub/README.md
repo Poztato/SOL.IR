@@ -1,7 +1,7 @@
 # Low-Powered Hub
 
 ## Overview
-The Low-Powered Hub is an energy-efficient controller for A/C automation, built on boards like Raspberry Pi Pico or ESP32. It uses motion, sound, and environmental sensors to infer occupancy without a camera.
+The Low-Powered Hub is an energy-efficient controller for A/C automation, built on boards like Raspberry Pi Pico. It uses motion, sound, and environmental sensors to infer occupancy without a camera.
 
 ## Key Features
 - **Motion Sensor (PIR)**: Detects movement in the classroom.
