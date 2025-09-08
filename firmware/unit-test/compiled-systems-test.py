@@ -18,7 +18,7 @@ PIN_SOUND = 27   # GP27 / ADC1
 PIN_SOLAR = 26   # GP26 / ADC0
 PIN_IR    = 2    # GP2  / PWM
 
-# ====== Thresholds (customize) ======
+# ====== Thresholds ======
 SOUND_DBFS_THRESHOLD = -4.0   # trigger if dBFS >= this (e.g., -30 dBFS)
 TEMP_C_THRESHOLD     = 30.0    # trigger if °C >= this
 
@@ -31,7 +31,7 @@ buf_sound      = array('H', [0] * N_SAMPLES)
 
 # ====== Solar + temperature config ======
 VREF = 3.3
-DIVIDER_RATIO = 5.0  # set for your panel sensor divider (e.g., 5:1)
+DIVIDER_RATIO = 5.0 
 SOLAR_SAMPLES = 64
 
 # RP2040 internal temperature sensor constants (typical values)
@@ -112,7 +112,7 @@ while True:
 
     flagged = (dbfs >= SOUND_DBFS_THRESHOLD) or (temp_c >= TEMP_C_THRESHOLD)
     if flagged:
-        # Print ALL readings when any sensor trips (solar has no threshold but is always reported)
+        # Print ALL readings when any sensor trips
         print("ALERT:")
         print("  Sound: {:6.1f} dBFS".format(dbfs))
         print("  Temp : {:6.2f} °C".format(temp_c))
