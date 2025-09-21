@@ -29,6 +29,11 @@ Universities waste energy when A/C runs in empty rooms, and students/staff lose 
   - **IR control** to the A/C (no electrical modifications to existing units).
   - **Campus systems** (HTTP/MQTT) for timetable ingest and notifications.
   - **Web dashboard** (prototype) for live status, override, logs, and alerts.
+ 
+- **Extra Features**
+  - **Crowd Surveillance:** The camera + student detection model of the high-powered variant can be used for crowd monitoring and data gathering. 
+  - **Centralized Control: ** All the A/C units of a campus can be controlled and monitored remotely using a centralized web portal.
+  - **Campus Safety:** The audio detection models can have a built-in fight detection system to provide admins with early warnings via the web portal.
 
 ---
 
